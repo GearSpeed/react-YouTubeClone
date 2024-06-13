@@ -9,11 +9,11 @@ export default function Categories() {
         "Sports",
     ]
     return(
-        <div id="categories-list">
+        <div className="flex flex-row gap-4">
             {
                 categories.map((category) => {
                     return <span key = {`category-${category}`} 
-                    className="category"> {category} </span>
+                    className="pt-2 pb-2 pl-4 pr-4 rounded-2xl bg-[#282828]"> {category} </span>
                 })
             }
         </div>

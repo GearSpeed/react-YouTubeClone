@@ -17,14 +17,14 @@ export default function Content(){
         {
             image:'https://i.ytimg.com/vi/77mt63A_DWw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCsDMIUEOzjgSnRy2T_VjFGSIrH8Q',
             title:'Esto es lo que le OFRECIÓ ESTADOS UNIDOS a MADURO para que dejara LA PRESIDENCIA!',
-            chanel:'Tu COSMOPOLIS3'
+            chanel:'Tu COSMOPOLIS1'
         },
     ]
 
     return (
-    <section id="content">
+    <section className="col-start-2 col-end-3 row-start-2 row-end-3">
         <Categories />
-        <section id="videos">
+        <section className="grid grid-cols-4 gap-4 pt-4">
             {videos.map((video)=>{
                 return (
                     <Video 
